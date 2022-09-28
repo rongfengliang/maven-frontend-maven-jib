@@ -1,0 +1,16 @@
+{
+  "name": "frontends",
+  "version": "1.0.0",
+  "license": "MIT",
+  "source": "index.html",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "clientjs": "^0.2.1"
+  },
+  "scripts": {
+    "build": "parcel build",
+    "b-publish": "parcel build index.html --public-url ."
+  }
+}

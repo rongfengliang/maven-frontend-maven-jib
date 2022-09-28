@@ -77,10 +77,6 @@
                 <configuration>
                     <to>
                         <image>dalongrong/mydemofrontendapp</image>
-                        <auth>
-                            <username>${env.REGISTRY_USERNAME}</username>
-                            <password>${env.REGISTRY_PASSWORD}</password>
-                        </auth>
                     </to>
                 </configuration>
                 <executions>

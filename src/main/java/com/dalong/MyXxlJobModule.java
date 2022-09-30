@@ -8,7 +8,7 @@ import com.xxl.job.core.executor.XxlJobExecutor;
 public class MyXxlJobModule extends AbstractModule {
     @Override
     protected void configure() {
-        bind(XxlJobExecutor.class).toProvider(MyXxLJobExecutorProvider.class).in(Singleton.class);
+        bind(XxlJobExecutor.class).toProvider(MyXxLJobExecutorProvider.class);
         Multibinder<MyAbstractJobHandler> jobHandlerMultibinder = Multibinder.newSetBinder(binder(), MyAbstractJobHandler.class);
         jobHandlerMultibinder.permitDuplicates();
         jobHandlerMultibinder.addBinding().to(Secondhandler.class);
